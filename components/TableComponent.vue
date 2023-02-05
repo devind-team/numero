@@ -173,7 +173,6 @@ const parameters = computed(() => {
         <span>{{ parameters.life || '-' }}</span>
       </div>
     </div>
-    <div class="my-5">{{ parameters.matrixLine }}</div>
   </div>
 </template>
 <style scoped>

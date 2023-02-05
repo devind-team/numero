@@ -1,5 +1,5 @@
 <template>
-<section class="lg:h-screen flex-wrap bg-[url('bg-header.jpg')] bg-cover mb-10">
+<section class="lg:h-screen flex-wrap bg-[url('/public/bg-header.jpg')] bg-cover mb-10">
   <div class="lg:h-screen flex flex-row justify-space-between flex-wrap">
     <div class="basis-2/3 prose max-w-prose ma-auto text-neutral-900">
       <div class="text-h2 text-center pa-5">👏 Привет! 👏</div>
@@ -18,7 +18,7 @@
         <li>помогу найти ответы на любые беспокоящие вопросы: здоровье, отношения, карьера, детские матрицы, подбор персонала и т.д.</li>
       </ol>
     </div>
-    <div class="hidden md:block basis-1/3 bg-[url('Alice.jpg')] bg-cover"></div>
+    <div class="hidden md:block basis-1/3 bg-[url('/public/Alice.jpg')] bg-cover"></div>
   </div>
 </section>
 </template>
