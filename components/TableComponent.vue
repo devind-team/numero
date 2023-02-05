@@ -30,14 +30,6 @@ const getDefaultParams = (evaluateParams: any) => {
 
 const count = (s: string) => s === '' ? 0 : s.split('').length
 
-const evaluateLifeNumber = (s: string[]): string => {
-  if (s.length === 1) {
-    return s.join('')
-  }
-  const sn = s.map(Number).reduce((a, c) => a + c)
-  return evaluateLifeNumber(String(sn).split(''))
-}
-
 const parameters = computed(() => {
   const numbers: string | undefined = props.date?.split('-').reverse().join('')
   if (numbers) {
@@ -71,6 +63,18 @@ const parameters = computed(() => {
     const family = count(energy) + count(logics) + count(duty)
     const habits = count(interest) + count(work) + count(memory)
     const life = count(health) + count(logics) + count(work)
+
+    // Рассчитываем число судьбы
+    const evaluateLifeNumber = (s: string[]): string => {
+      if (s.join('') === '11' && secondAdditional === '11') {
+        return s.join('')
+      }
+      if (s.length === 1) {
+        return s.join('')
+      }
+      const sn = s.map(Number).reduce((a, c) => a + c)
+      return evaluateLifeNumber(String(sn).split(''))
+    }
 
     const destiny = evaluateLifeNumber(numbers.split(''))
 
