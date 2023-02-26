@@ -19,7 +19,7 @@ const evaluate = () => {
 <template>
   <section class="pt-10 pb-20">
     <VContainer>
-      <div class="text-center text-h2 mb-10">☀️ Калькулятор матрицы ☀️</div>
+      <div class="text-center text-h2 mb-10 text-lime-300">☀️ Калькулятор матрицы ☀️</div>
       <div>
         <div>
           <VueDatePicker v-model="date" placeholder="Введите дату" locale="ru" format="dd.MM.yyyy" text-input/>

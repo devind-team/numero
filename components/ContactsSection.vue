@@ -1,7 +1,7 @@
 <template>
   <section>
     <VContainer class="pt-10">
-      <div class="text-center text-h2 mb-10">☀️ Контакты ☀️</div>
+      <div class="text-center text-h2 mb-10 text-lime-300">☀️ Контакты ☀️</div>
       <div class="contacts-container">
         <VCard variant="tonal" href="https://t.me/alicebykova">
           <VImg class="icon w-[120px]" src="telegram.svg"/>
