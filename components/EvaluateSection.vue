@@ -17,7 +17,7 @@ const evaluate = () => {
 }
 </script>
 <template>
-  <section class="pb-20">
+  <section class="pt-10 pb-20">
     <VContainer>
       <div class="text-center text-h2 mb-10">☀️ Калькулятор матрицы ☀️</div>
       <div>
