@@ -1,9 +1,11 @@
 <template>
-<section class="bg-[url('/public/bg-gradient.png')] bg-cover">
+<section>
   <div class="flex flex-col">
-    <div class="text-h2 text-center my-10">😇 Сертификаты 😇</div>
+    <div class="text-h2 text-center my-10">☀️ Мои дипломы ☀️</div>
     <div class="ma-auto mb-10 text-center w-75">
-      <VImg src="certificate.jpg" cover/>
+      <VCarousel hide-delimiters>
+        <VCarouselItem src="certificate.jpg" />
+      </VCarousel>
     </div>
   </div>
 </section>

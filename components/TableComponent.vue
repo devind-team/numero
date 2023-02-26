@@ -66,7 +66,7 @@ const parameters = computed(() => {
 
     // Рассчитываем число судьбы
     const evaluateLifeNumber = (s: string[]): string => {
-      if (s.join('') === '11' && secondAdditional === '11') {
+      if (s.join('') === '11') {
         return s.join('')
       }
       if (s.length === 1) {
@@ -131,7 +131,7 @@ const parameters = computed(() => {
         <span>{{ parameters.luck || '-' }}</span>
       </div>
       <div>
-        <span>Целеустремленность</span>
+        <span>Цель</span>
         <span>{{ parameters.goal || '-' }}</span>
       </div>
 
@@ -175,9 +175,9 @@ const parameters = computed(() => {
     </div>
   </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
 .grid > div {
-  border: 1px solid black;
+  border: 1px solid #a3e635;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -186,9 +186,11 @@ const parameters = computed(() => {
   padding: 5px;
   border-bottom: none;
 }
+
 .grid > div:last-child, .grid > div:nth-child(11), .grid > div:nth-child(13), .grid > div:nth-child(14) {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #a3e635;
 }
+
 .grid > div:nth-child(2n), .grid > div:nth-child(5), .grid > div:nth-child(9), .grid > div:nth-child(13) {
   border-left: none;
 }

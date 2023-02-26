@@ -1,20 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/robots', 'nuxt-svgo'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/robots', '@nuxt/devtools', 'nuxt-svgo'],
   app: {
     head: {
       title: 'Алиса Быкова - Ваш личный нумеролог'
     }
   },
   css: [
-    '~/assets/css/tailwind.css',
-    '~/assets/css/main.css',
-    'vuetify/lib/styles/main.sass',
     '@mdi/font/css/materialdesignicons.min.css',
+    'vuetify/lib/styles/main.css',
+    '@vuepic/vue-datepicker/dist/main.css',
+    '~/assets/css/tailwind.css',
   ],
-
   build: {
-    transpile: ['vuetify'],
+    transpile: ['vuetify', '@vuepic/vue-datepicker'],
   },
   vite: {
     define: {
