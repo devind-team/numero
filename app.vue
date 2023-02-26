@@ -8,9 +8,9 @@ import ContactsSection from '~/components/ContactsSection.vue'
 <template>
   <VApp>
     <VMain class="app-body">
+      <EvaluateSection/>
       <AboutSection/>
       <InfoSection/>
-      <EvaluateSection/>
       <CertificatesSection/>
       <ContactsSection/>
     </VMain>
